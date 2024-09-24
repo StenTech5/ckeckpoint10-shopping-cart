@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/DOM/style.css">
+</head>
+<body>
+    <main class="shopping-cart">
+        <header>
+          <h1>Your Shopping Cart</h1>
+        </header>
+      
+        <section class="cart-items">
+          <!-- Cart Item 1 -->
+          <article class="cart-item" aria-label="Item 1 in cart">
+            <div class="item-image">
+              <img src="https://nobero.com/cdn/shop/files/Untitleddesign_27.png?v=1711978684" alt="Modern T-Shirt" class="product-image">
+            </div>
+            <div class="item-details">
+              <h2 class="item-name">Modern T-Shirt</h2>
+              <p class="item-price">$25.00</p>
+            </div>
+            <div class="item-controls">
+              <button class="minus" aria-label="Decrease quantity">−</button>
+              <span class="quantity" aria-live="polite" aria-label="Quantity">1</span>
+              <button class="plus" aria-label="Increase quantity">+</button>
+            </div>
+            <div class="item-actions">
+              <button class="delete" aria-label="Remove item from cart">Delete</button>
+              <button class="heart" aria-label="Like this item">❤</button>
+            </div>
+          </article>
+      
+          <!-- Add more articles here for additional items -->
+        </section>
+      
+        <section class="cart-summary">
+          <p>Total: <span class="total-price" aria-live="polite">$0.00</span></p>
+        </section>
+      
+        <footer>
+          <button class="checkout-btn" aria-label="Proceed to checkout">Checkout</button>
+        </footer>
+      </main>
+      
+
+      <script src="/DOM/index.js"></script>
+      
+    
+</body>
+</html>
